@@ -3,16 +3,23 @@ import { ConfessionList } from "./ConfessionList";
 import {SectionCon, PrevButton, ConfessionCon,NextButton,  TestifierImg, Singletest, Testimony, TestifierName, TestifierOccupation } from "../styles/ConfessionStyle";
 
 const scrollleft = () => {
-    ConfessionCon.scrollLeft += 200;
+    let TestCon = document.getElementById("container") as HTMLDivElement;
+
+    TestCon.scrollLeft += 200;
+}
+const scrollright = () => {
+    let TestCon = document.getElementById("container") as HTMLDivElement;
+
+    TestCon.scrollLeft -= 200;
 }
 
 const Confession  = () => {
     return(
         <SectionCon>
-            <NextButton  onClick={scrollleft()}>{'>'}</NextButton>
-            <PrevButton>{'<'}</PrevButton>
+            <NextButton   onClick={scrollleft}>{'>'}</NextButton>
+            <PrevButton  onClick={scrollright}>{'<'}</PrevButton>
 
-        <ConfessionCon>
+        <ConfessionCon  id="container">
                {ConfessionList.map((list, index)  =>{
                    return(
                     <Singletest  key={index} >

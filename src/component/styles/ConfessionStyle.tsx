@@ -8,7 +8,7 @@ border-radius: 50%;
 border:2px solid green;
 `
 export  const Singletest = styled.div`
-width: 17rem;
+
 margin: 0.5rem;
 padding:0.5rem;
 
@@ -23,7 +23,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 export  const TestifierOccupation = styled.p`
 margin:0.5rem;
-width: 15rem;
+min-width:13rem;
 `
 
 export  const SectionCon = styled.div`
@@ -36,7 +36,8 @@ export  const SectionCon = styled.div`
 export  const ConfessionCon = styled.div`
 margin-top: 2rem;
 display: flex ;
-overflow: scroll;
+overflow: hidden;
+scroll-behavior: smooth;
 width: 83%;
 justify-content: flex-start;
 align-items: center;
@@ -52,6 +53,7 @@ border:2px solid black;
 position: absolute;
 top:50%;
 right:1.2rem;
+cursor: pointer;
 &:hover{
     box-shadow: 3px 3px 3px black;
     background-color: #70c970;

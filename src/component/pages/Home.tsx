@@ -1,5 +1,6 @@
 import Banner from "../sections/Banner"
 import Confession from "../sections/Confession"
+import ProfileDisplay from "../sections/ProfileDisplay"
 import Search from "../sections/Search"
 
 
@@ -9,6 +10,7 @@ const Home = () => {
              <Banner/>
              <Search/>
              <Confession/>
+             <ProfileDisplay/>
         </div>
     )
 }

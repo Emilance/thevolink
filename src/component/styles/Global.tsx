@@ -36,6 +36,13 @@ export const BannerText = styled.div`
     margin-left: 1rem;
 
    }
+   @media (max-width:600px) {
+     flex:none;
+    width: 75%;
+    margin: 0;
+    margin-left:10%;
+  }
+
 `
 export const BannerImg = styled.div`
  flex: 1;
@@ -58,6 +65,9 @@ export const Hero = styled.img`
   height: 56%;
   right:2%;
   top: 20%;
+  }
+  @media (max-width:600px) {
+    display: none;
   }
 `
 export const ButtonContainer = styled.div`
