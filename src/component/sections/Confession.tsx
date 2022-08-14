@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { ConfessionList } from "./ConfessionList";
-import {SectionCon, PrevButton, ConfessionCon,NextButton,  TestifierImg, Singletest, Testimony, TestifierName, TestifierOccupation } from "../styles/ConfessionStyle";
+import {SectionCon, PrevButton, SectionTitle, ConfessionCon,NextButton,  TestifierImg, Singletest, Testimony, TestifierName, TestifierOccupation } from "../styles/ConfessionStyle";
 
 const scrollleft = () => {
     let TestCon = document.getElementById("container") as HTMLDivElement;
@@ -16,8 +16,9 @@ const scrollright = () => {
 const Confession  = () => {
     return(
         <SectionCon>
-            <NextButton   onClick={scrollleft}>{'>'}</NextButton>
-            <PrevButton  onClick={scrollright}>{'<'}</PrevButton>
+            <SectionTitle >What are people saying about Us </SectionTitle>
+            <NextButton   onClick={scrollleft}/>
+            <PrevButton  onClick={scrollright}/>
 
         <ConfessionCon  id="container">
                {ConfessionList.map((list, index)  =>{

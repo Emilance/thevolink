@@ -19,13 +19,16 @@ export const BsButton  = styled(BsSearch)`
 const  SearchContainer = styled.div`
     width:70%;
     display: flex;
-    border: 1px solid black;
+    border: 1px dotted black;
     height: 3rem;
     border-radius:4rem;
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
+&:hover{
+    box-shadow:5px 5px 10px green;
 
+}
 `
 
 const SearchInput = styled.input`

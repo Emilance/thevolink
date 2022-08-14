@@ -19,11 +19,11 @@ align-items:center;
 padding-top: 2rem;
 height: 30rem;
 color: white;
-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0 76%, 0 0);
+position: relative;
 background:radial-gradient(green, #7cd37c,white);
 @media (max-width:700px) {
         height: 25rem;
-        clip-path: polygon(100% 0, 100% 79%, 76% 98%, 54% 91%, 30% 100%, 0 80%, 0 0);
+        clip-path:none;
 }
 
 `
@@ -31,6 +31,7 @@ background:radial-gradient(green, #7cd37c,white);
 export const BannerText = styled.div`
    flex:1;
    margin-left: 4rem;
+   margin-bottom: 4rem;
 
    @media (max-width:860px) {
     margin-left: 1rem;
@@ -49,10 +50,10 @@ export const BannerImg = styled.div`
  margin-right: 1rem;
 `
 export const Hero = styled.img`
-  width:20rem;
+  /* width:20rem; */
   position: absolute;
   height: 70%;
-  right:10%;
+  left:65%;
   top: 20%;
   opacity: ${(props:herotype) => props.display === props.position ? "1":  "0"};
   transform:scale( ${(props:herotype) => props.display === props.position ? "1.3":  "1"});
@@ -73,14 +74,16 @@ export const Hero = styled.img`
 export const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
+  justify-content: space-between;
 `
 
 
 export const Button = styled.button`
 height: 2rem;
-width:100%;
-min-width: 10rem;
-border:1px solid black;
+width:48%;
+min-width: 9rem;
+border:3px dotted black;
+border-radius: 20px;
 display: flex;
 justify-content: center;
 color:${(props:Buttontype) => props.variant ==='outline' ? '#1c1c1e': 'white'};
@@ -101,10 +104,12 @@ background-color: ${(props:Buttontype) => props.variant ==='outline' ? 'transpar
 export const HeroSubtitle= styled.p`
      text-align: start;
      color:#1c1c1e;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
 `
 export const HeroTitle= styled.h1`
-  color:#1c1c1e;
+  color:white;
   text-align: start;
+  
   @media (max-width:860px) {
   font-size: 1.7rem;
 

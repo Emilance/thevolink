@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
+
 const Ul = styled.ul`
     list-style: none;
     display: flex;
     color: black;
     justify-content: space-evenly;
-    max-width:35rem;
+    max-width:30rem;
     
     @media (max-width:700px) {
         flex-direction: column;
@@ -36,12 +37,13 @@ const List  = styled.li`
 const NavAnchor = styled.a`
      color:black;
      text-decoration: none;
-     font-size: 1rem;
-     font-weight:700;
+     font-size: 0.9rem;
+     font-weight:500;
      padding: 0.5rem;
      border-radius: 0.33rem;
      &:hover {
-         border: 1px solid black;
+         border: 1px solid green;
+         color:green
      }
 
      @media (max-width:700px) {
@@ -55,17 +57,22 @@ const NavLink = () => {
       <Ul>
           <List >
               <NavAnchor  href="#">
-                  HOME
+                  Home
               </NavAnchor>
           </List>
           <List >
               <NavAnchor  href="#">
-                  ABOUT US
+                  About Us
               </NavAnchor>
           </List>
           <List >
               <NavAnchor  href="#">
-                  OUR TEAM
+                  Our Team
+              </NavAnchor>
+          </List>
+          <List >
+              <NavAnchor  href="#">
+                  Contact Us
               </NavAnchor>
           </List>
       </Ul>
