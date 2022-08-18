@@ -5,7 +5,8 @@ import {GrMenu} from 'react-icons/gr'
 import {ImCross} from 'react-icons/im'
 
 const MobileNavCon = styled.div`
-     position: fixed;
+    z-index: 100;
+    position: fixed;
      right: 5%;
     @media (min-width:700px) {
         display: none;

@@ -32,10 +32,11 @@ const DisplayCon = styled.div`
        transition: 1s all ease;
        overflow: hidden;
        border-radius: 2rem;
-       width :30rem;
+       width :30rem;     
        @media (max-width:860px) {
            height:23rem;
-           width:23rem;
+           width:130%;
+           display:${(prop:Titletype) => prop.variant == "outline" ? "none" : ""};
        }
   
 `
@@ -80,6 +81,7 @@ const InputLabel= styled.label`
 `
 const Input = styled.input`
 height: 2.3rem;
+padding-left: 0.3rem;
 border:none;
 border-bottom: 1px solid green;
 outline: none;
@@ -107,6 +109,7 @@ const Select = styled.select`
     border:none;
      border-bottom: 1px solid green;
    outline: none;
+   padding-left: 0.3rem;
 `
 const option = styled.option`
     
@@ -139,11 +142,10 @@ const ProfileDisplay =() =>{
     return (
 
           <DSectionCon>
-              <p>{bindex}</p>
               <Title variant=''>ARE WE FOR YOU ?</Title>
               <SectionCon>
 
-              <DisplayCon >
+              <DisplayCon   variant="" >
                   <InnerD    style={{ transform :`translateX(${-30 * bindex}rem)`}} >
 
                   <Image src={display1}  alt="profiles"/>
@@ -182,7 +184,7 @@ const ProfileDisplay =() =>{
                   </Form>
               </FormCon>
               
-              <DisplayCon >
+              <DisplayCon  variant="outline" >
                   <InnerD    style={{ transform :`translateX(${-30 * bindex}rem)`}} >
 
                   <Image src={display1}  alt="profiles"/>

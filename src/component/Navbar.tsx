@@ -19,6 +19,7 @@ const Container = styled.div`
      justify-content: space-between;
      align-items: center;
      margin: 0 2rem;
+
  @media (max-width:600px) {
     margin: 0;
     height:4rem;

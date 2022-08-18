@@ -18,8 +18,9 @@ export const Container = styled.div`
 `
 export const NewsletterContainer = styled.div`
     display: flex;
-    height: 2rem;
+    height: 2.5rem;
     margin:0.8rem 0 ;
+    width: 60%;
 
      
 `
@@ -37,16 +38,20 @@ export const Submit = styled.input`
   
 `
 export const  LeftFooter =  styled.div`
-    flex:0.7;
-    display: grid ;
-    align-content: center;
+    flex:1;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
 `
 
 export const SocialMediaIcon = styled.div`
     display: flex;
     color:white;
     justify-content: space-around;
-    margin : 2 
+    margin : 2rem ;
+    width: 30%;
 
 
 `
@@ -61,6 +66,7 @@ export const  Title  = styled.p`
      font-size:${(props:TitleType) => props.variant =="outline" ? '1.5rem' :'1.2rem' } 1.5rem;
      color: white;
      margin:0.3rem;
+     align-items: start;
 `
 export const Image = styled.img`
     width:4rem ;
@@ -71,6 +77,6 @@ export const Image = styled.img`
 export   const LogoCon = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content:center;
 
 `

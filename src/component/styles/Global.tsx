@@ -23,7 +23,10 @@ position: relative;
 background:radial-gradient(green, #7cd37c,white);
 @media (max-width:700px) {
         height: 25rem;
-        clip-path:none;
+        background-image: linear-gradient(to bottom, #1f3b1f50 40%, #00000076  60%) , url('./display4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: " ";
 }
 
 `
@@ -82,11 +85,11 @@ export const Button = styled.button`
 height: 2rem;
 width:48%;
 min-width: 9rem;
-border:3px dotted black;
+border:3px dotted white;
 border-radius: 20px;
 display: flex;
 justify-content: center;
-color:${(props:Buttontype) => props.variant ==='outline' ? '#1c1c1e': 'white'};
+color:${(props:Buttontype) => props.variant ==='outline' ? 'white': 'white'};
 align-items: center;
 cursor: pointer;
 padding: 1.3rem;
@@ -96,14 +99,14 @@ background-color: ${(props:Buttontype) => props.variant ==='outline' ? 'transpar
 &:hover{
     background-color: ${(props:Buttontype) => props.variant !=='outline' ? 'transparent':  "#1c1c1e"};
     box-shadow: 5px 5px 5px black;
-    color:${(props:Buttontype) => props.variant !=='outline' ? '#1c1c1e': 'white'};
+    color:${(props:Buttontype) => props.variant !=='outline' ? 'white': 'white'};
 
 }
 `
 
 export const HeroSubtitle= styled.p`
      text-align: start;
-     color:#1c1c1e;
+     color:white;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
 `
 export const HeroTitle= styled.h1`

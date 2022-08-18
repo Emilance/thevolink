@@ -11,12 +11,14 @@ const Ul = styled.ul`
     @media (max-width:700px) {
         flex-direction: column;
         position: fixed;
-        z-index: 2000;
+    
         top:4rem;
         justify-content: flex-start;
+        align-items: center;
         right:3rem;
         width: 90%;
         height: 100vh;
+      
         background:linear-gradient(green, #2f2f9ee6, #000000ca);
     }
     @media (max-width:700px) {
@@ -31,6 +33,7 @@ const List  = styled.li`
 
     @media (max-width:700px) {
       text-align: start;
+   
       margin: 1.3rem  1.3rem 0 0.8rem;
     }
 `

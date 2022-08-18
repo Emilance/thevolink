@@ -12,9 +12,11 @@ const  SectionContainer = styled.div`
 
 export const BsButton  = styled(BsSearch)`
     color:green;
+
     &:hover{
          transform:scale(1.08)
     }
+   
 `
 const  SearchContainer = styled.div`
     width:70%;
@@ -29,6 +31,9 @@ const  SearchContainer = styled.div`
     box-shadow:5px 5px 10px green;
 
 }
+@media (max-width: 700px) {
+     width:75%;
+}
 `
 
 const SearchInput = styled.input`
@@ -40,6 +45,9 @@ const SearchInput = styled.input`
     &:focus{
         outline:none;
     }
+    @media (max-width: 700px) {
+     width:70%;
+}
 
 
 `
@@ -52,7 +60,7 @@ const  Search = () => {
 
          <SearchContainer>
              <SearchInput type='text' placeholder='Search for a profile here' />
-             <BsButton size='30px' style={{margin:' 2rem', cursor:'pointer'}} />
+             <BsButton size='30px' style={{margin:' 1rem', cursor:'pointer'}} />
          </SearchContainer>
          </SectionContainer>
      )

@@ -28,6 +28,7 @@ export const LeftImgCon =  styled.div`
     flex:1;
     height:100%;
     position: relative;
+   
 
  
 `
