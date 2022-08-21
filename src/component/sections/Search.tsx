@@ -1,5 +1,8 @@
 import { BsSearch }  from 'react-icons/bs'
 import styled from 'styled-components'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react"
 
 const  SectionContainer = styled.div`
     height :9rem;
@@ -54,8 +57,11 @@ const SearchInput = styled.input`
 
 
 const  Search = () => {
+    useEffect(() => {
+        AOS.init({duration : 800});
+      }, [])
      return (
-         <SectionContainer>
+         <SectionContainer  data-aos="flip-left">
 
 
          <SearchContainer>

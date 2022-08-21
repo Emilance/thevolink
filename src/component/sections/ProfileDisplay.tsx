@@ -3,6 +3,8 @@ import display1  from '../../Images/display5.jpg'
 import display2  from '../../Images/display1.jpg'
 import display3  from '../../Images/display2.png'
 import display4  from '../../Images/display3.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect, useState } from "react"
 
 type  Titletype = {
@@ -122,6 +124,12 @@ const Title =styled.h2`
 const ProfileDisplay =() =>{
     const [bindex, setBindex]  = useState(0)
 
+        
+    useEffect(() => {
+
+        AOS.init({duration : 800});
+      }, [])
+
   const counter = ()=> {
       if(bindex < 4){
           
@@ -155,9 +163,10 @@ const ProfileDisplay =() =>{
                   </InnerD>
               </DisplayCon>
               <FormCon>
-                  <Form>
+                  <Form    >
                         <Title  variant='outline' >Join Our WaitList</Title>
-                       <Field>
+                       <Field  data-aos="fade-up"
+                       data-aos-duration="3000">
                        <InputLabel>Select User</InputLabel>
                        <Select>
                        <option></option>
@@ -165,19 +174,23 @@ const ProfileDisplay =() =>{
                        <option>Looking Forward to be Employed</option>
                        </Select>
                        </Field>
-                       <Field>
+                       <Field  data-aos="fade-up"
+                        data-aos-duration="1000">
                        <InputLabel>Name</InputLabel>
                        <Input type='text'/>
                        </Field>
-                       <Field>
+                       <Field  data-aos="fade-up"
+                        data-aos-duration="1000">
                        <InputLabel>Phone</InputLabel>
                        <Input type='number'/>
                        </Field>
-                       <Field>
+                       <Field data-aos="fade-up"
+                       data-aos-duration="1000">
                        <InputLabel>Email</InputLabel>
                        <Input type='email'/>
                        </Field>
-                       <Field>
+                       <Field data-aos="fade-up"
+                      data-aos-duration="1000">
 
                        <Submit type="submit"/>
                        </Field>

@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 type  TitleType = {
     variant : string ;
+
 }
 
 export const Container = styled.div`
@@ -53,6 +54,10 @@ export const SocialMediaIcon = styled.div`
     margin : 2rem ;
     width: 30%;
 
+    @media (max-width: 600px) {
+        width: 90%
+    }
+
 
 `
 
@@ -62,8 +67,8 @@ export const RightFooter =styled.div`
 `
 
 export const  Title  = styled.p`
-     font-weight: 600;
-     font-size:${(props:TitleType) => props.variant =="outline" ? '1.5rem' :'1.2rem' } 1.5rem;
+     font-weight: 700;
+     font-size:${(props:TitleType) => props.variant =="outline" ? '1.5rem' :'1.5rem' } 1.5rem;
      color: white;
      margin:0.3rem;
      align-items: start;

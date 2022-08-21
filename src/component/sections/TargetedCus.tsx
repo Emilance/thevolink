@@ -2,10 +2,15 @@ import styled from 'styled-components'
 import {Container, RightTextCon, LeftImgCon, Title,Paragraph, Image, Text} from "../styles/TargetedCusStyle"
 import {GrWorkshop}  from "react-icons/gr"
 import { MdGppGood } from  "react-icons/md"
-
+import AOS from "aos";
+import { useEffect } from "react"
+import "aos/dist/aos.css";
 
 
 const TargetedCus = ()=> {
+   useEffect(() => {
+      AOS.init({duration : 800});
+    }, [])
    return (
        <Container > 
             <RightTextCon >
@@ -34,8 +39,8 @@ const TargetedCus = ()=> {
                 </Paragraph>
             </RightTextCon>
             <LeftImgCon >
-                 <Image variant='outline'  src='/display1.jpg' alt="" />
-                 <Image variant=''  src='/display2.png' alt="" />
+                 <Image  data-aos="fade-left" variant='outline'  src='/display1.jpg' alt="" />
+                 <Image data-aos="fade-right" variant=''  src='/display2.png' alt="" />
             </LeftImgCon>
        </Container>
    )
