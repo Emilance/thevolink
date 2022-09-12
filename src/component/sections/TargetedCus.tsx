@@ -16,15 +16,12 @@ const TargetedCus = ()=> {
             <RightTextCon >
                  <Title >Who are we Targeting ?</Title>
                  <Paragraph>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda architecto qui
-                      inventore nesciunt, facilis deserunt cumque eveniet adipisci quam facere debitis voluptas, 
-                      distinctio, odio culpa impedit nemo? Eius atque delectus rem harum illum expedita ullam consequuntur
-                      , est iste dolorem.
+                 TheVolink is a micro job platform created with the motive of connecting vocational skilled workers to employers, we help local vocational skilled workers in Nigeria get jobs by allowing them to create a verified portfolio profile for their profession.
                 </Paragraph>
                 <Paragraph>
                      <GrWorkshop size="30"/>
                   <Text >
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda architecto qui
+                    We are locally concern, we care about making the goal of local workers come true 
                   </Text>
                       
                     
@@ -32,7 +29,7 @@ const TargetedCus = ()=> {
                 <Paragraph>
                      <MdGppGood size="30"/>
                   <Text >
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda architecto qui
+                    We serve as a trusted intermidiary, the word trusted made us unique and our mission  essential 
                   </Text>
                       
                     

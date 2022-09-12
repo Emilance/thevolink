@@ -102,12 +102,21 @@ background-color: ${(props:Buttontype) => props.variant ==='outline' ? 'transpar
     color:${(props:Buttontype) => props.variant !=='outline' ? 'white': 'white'};
 
 }
+@media (max-width:600px) {
+  margin-left:${(props:Buttontype) => props.variant ==='outline' ? '': '0.5rem'}
+}
 `
 
 export const HeroSubtitle= styled.p`
      text-align: start;
      color:white;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+@media (max-width: 600px) {
+  display:${(props:Buttontype) => props.variant ==='outline' ? 'none': ''};
+
+}
+
 `
 export const HeroTitle= styled.h1`
   color:white;

@@ -21,8 +21,8 @@ const Banner = ()=> {
     <BannerContainer>
         <BannerText>
             <HeroTitle> ONLY PROFICIENT PROFESIONALS</HeroTitle>
-            <HeroSubtitle >TheVolink is micro job platform created with the motive of connecting vocational skilled workers to employers, we help local vocational skilled workers in Nigeria get jobs by allowing them to create a verified portfolio profile for their profession</HeroSubtitle>
-            <HeroSubtitle>Bridging the gap between vocational workers and employers</HeroSubtitle>
+            <HeroSubtitle variant=''>TheVolink is a micro job platform created with the motive of connecting vocational skilled workers to employers, we help local vocational skilled workers in Nigeria get jobs by allowing them to create a verified portfolio profile for their profession</HeroSubtitle>
+            <HeroSubtitle variant ="outline">Bridging the gap between vocational workers and employers</HeroSubtitle>
         <ButtonContainer>
             
                 <Button variant='outline'>READ MORE</Button>

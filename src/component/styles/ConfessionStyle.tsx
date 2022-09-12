@@ -12,6 +12,8 @@ border:1px dotted black;
 margin: 0.5rem;
 padding:0.5rem;
 color: #000000ce;
+border-radius: 1.5rem;
+box-shadow: 1px 1px 4px black;
 
 
 `
