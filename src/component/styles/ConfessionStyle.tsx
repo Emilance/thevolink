@@ -55,6 +55,11 @@ width: 83%;
 justify-content: flex-start;
 align-items: center;
 
+@media (max-width:600px) {
+    overflow-x: scroll;
+    width: 88%;
+}
+
 `
 export  const NextButton = styled(AiOutlineArrowRight)`
 background-color: #9abd9a;
@@ -71,6 +76,10 @@ cursor: pointer;
     box-shadow: 3px 3px 3px black;
     background-color: #70c970;
 
+}
+
+@media (max-width:600px) {
+    display: none;
 }
 
 `
@@ -90,6 +99,9 @@ cursor: pointer;
     box-shadow: 3px 3px 3px black;
     background-color: #70c970;
 
+}
+@media (max-width:600px) {
+    display: none;
 }
 
 

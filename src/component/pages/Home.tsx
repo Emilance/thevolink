@@ -7,6 +7,7 @@ import TargetedCus from "../sections/TargetedCus"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react"
+import LandDropDown from "../LangDropDown"
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
 
     return(
         <div>
+           
              <Banner/>
              <Search  data-aos="fade-right"/>
              <Confession/>
