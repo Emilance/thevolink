@@ -37,7 +37,7 @@ const Logo = styled.h1`
 const NavCon = styled.div`
     flex :1;
 `
-const Button = styled.div`
+const Button = styled.a`
     border: 2px dotted green;
     padding: 0.6rem;
     width: 6rem;
@@ -82,7 +82,7 @@ const Navbar = () =>{
              <Navigation/>
              <MobileNavigation/>
         </NavCon>
-        <Button >JOIN US </Button>
+        <Button  href='#joinus'>JOIN US </Button>
         </Container>
     )
 }

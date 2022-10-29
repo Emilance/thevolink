@@ -29,7 +29,6 @@ const Banner = ()=> {
 
            
         }, 4000)
-       return clearTimeout()
     }, [counter])
     return(
 

@@ -152,7 +152,7 @@ const ProfileDisplay =() =>{
     
     return (
 
-          <DSectionCon>
+          <DSectionCon >
               <Title variant=''>ARE WE FOR YOU ?</Title>
               <SectionCon>
 
@@ -166,7 +166,7 @@ const ProfileDisplay =() =>{
                   </InnerD>
               </DisplayCon>
               <FormCon>
-                  <Form    >
+                  <Form   id="joinus"  >
                         <Title  variant='outline' >Join Our WaitList</Title>
                        <Field  data-aos="fade-up"
                        data-aos-duration="3000">

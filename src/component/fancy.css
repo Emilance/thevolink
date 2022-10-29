@@ -1,0 +1,71 @@
+
+.burger {
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+    width:3rem;
+    border:1px solid black;
+    height: fit-content;
+   
+    right: 50%;
+    top:50%;
+    display:none;
+  }
+  
+  :root {
+    --button-width: 2.5rem;
+    --button-height: calc(var(--button-width) * .8);
+    --rectangle-height: calc(var(--button-width) * .1);
+    --rectangle-radius: calc(var(--button-width) * .04);
+    --translate: calc(var(--button-width) * .17);
+    --transition: 0.65s;
+  }
+  
+  .fancy-burger {
+    position: relative;
+    width: var(--button-width);
+    height: var(--button-height);
+    border: 0;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    z-index: 600;
+  }
+  .rectangle {
+    position: absolute;
+    height: var(--rectangle-height);
+    background: rgb(240, 239, 239);
+    border-radius: var(--rectangle-radius);
+    transition: transform var(--transition);
+  }
+  .rectangle--small {
+    width: calc(var(--button-width) / 2);
+  }
+  .rectangle--top {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+  }
+  .rectangle--top.open {
+    transform: translateX(var(--translate)) rotate(45deg);
+  }
+  .rectangle--middle {
+    top: 50%;
+    left: 0;
+    width: var(--button-width);
+    transform: translatey(-50%);
+  }
+  .rectangle--middle.open {
+    transform: translatey(-50%) rotate(-45deg);
+  }
+  .rectangle--bottom {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+  }
+  .rectangle--bottom.open {
+    transform: translateX(calc(-1 * var(--translate))) rotate(45deg);
+  }
+  
+  
+  

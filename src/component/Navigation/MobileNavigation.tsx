@@ -3,6 +3,7 @@ import styled from "styled-components"
 import NavLink from "./Navlinks"
 import {GrMenu} from 'react-icons/gr'
 import {ImCross} from 'react-icons/im'
+import FancyBurger from "../FancyBurger"
 
 const MobileNavCon = styled.div`
     z-index: 100;
@@ -36,24 +37,16 @@ const CloseBurger = styled(ImCross)`
 
 const  MobileNavigation = () => {
         const [open, setOpen]  = useState(false)
-   
+        const toggleSideBar=()=>{
+            setOpen(!open)
+        }
 
-        const OpenB  =  <OpenBurger 
-                        onClick={()=>  setOpen(!open)}
-                        size='35px'
-                        color="green"
-                        />
-
-        const CloseB  =  <CloseBurger 
-                        onClick={()=>  setOpen(!open)}
-                        size='35px'
-                        color="green"
-                        />
+       
 
 
      return(
          <MobileNavCon >
-           {open ? CloseB : OpenB }
+            <FancyBurger  />
             {open  && <NavLink/>}
          </MobileNavCon>
      )

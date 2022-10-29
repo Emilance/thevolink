@@ -2,32 +2,35 @@ import styled from "styled-components";
 import {AiOutlineArrowRight, AiOutlineArrowLeft}  from "react-icons/ai"
 
 export  const TestifierImg = styled.img`
-width:7rem;
-height :7rem;
+width:4rem;
+height :4rem;
 border-radius: 50%;
-border:2px solid green;
+border:2px solid  #e7dfdf37;
 `
 export  const Singletest = styled.div`
-border:1px dotted black;
+
 margin: 0.5rem;
 padding:0.5rem;
 color: #000000ce;
 border-radius: 1.5rem;
-box-shadow: 1px 1px 4px black;
+
 
 
 `
 export  const Testimony = styled.p`
  font-size: 0.8rem;
+ margin:0;
+ width: 15rem;
 `
 
 export const SectionTitle = styled.h1`
-    
+    font-size: 1.9rem;
+    max-width: 90vw;
 
 `
 export  const TestifierName = styled.p`
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- margin:0.6rem;
+ margin:0.2rem 0.6rem;
+ font-weight: 500;
 `
 
 export  const TestifierOccupation = styled.p`
@@ -63,23 +66,23 @@ align-items: center;
 `
 export  const NextButton = styled(AiOutlineArrowRight)`
 background-color: #9abd9a;
-
-width:2rem;
-height: 3rem;
-border-radius:10px;
-border:2px solid black;
+color: white;
+padding: 0.5rem;
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+border:2px solid #a1a1a1;
 position: absolute;
 top:50%;
 right:1.2rem;
 cursor: pointer;
 &:hover{
-    box-shadow: 3px 3px 3px black;
     background-color: #70c970;
 
 }
 
 @media (max-width:600px) {
-    display: none;
+   
 }
 
 `
@@ -87,21 +90,22 @@ export  const PrevButton = styled(AiOutlineArrowLeft)`
 
 background-color: #9abd9a;
 left:1.2rem;
-width:2rem;
-height: 3rem;
-border-radius:10px;
-border:2px solid black;
+color: white;
+padding: 0.5rem;
+width: 1rem;
+height: 1rem;
+border-radius: 50%;
+border:2px solid  #a1a1a1;
 position: absolute;
 top:50%;
 right:1.2rem;
 cursor: pointer;
 &:hover{
-    box-shadow: 3px 3px 3px black;
     background-color: #70c970;
 
 }
 @media (max-width:600px) {
-    display: none;
+   
 }
 
 

@@ -77,32 +77,44 @@ export const Hero = styled.img`
 export const ButtonContainer = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 1000;
 `
 
 
-export const Button = styled.button`
-height: 2rem;
-width:48%;
-min-width: 9rem;
-border:3px dotted white;
-border-radius: 20px;
-display: flex;
-justify-content: center;
-color:${(props:Buttontype) => props.variant ==='outline' ? 'white': 'white'};
-align-items: center;
-cursor: pointer;
-padding: 1.3rem;
-font-size: ${(props:Buttontype) => props.variant ==='outline' ? '1rem':  "0.8rem"};
-font-weight: 700;
-background-color: ${(props:Buttontype) => props.variant ==='outline' ? 'transparent':  "#1c1c1e"};
+export const Button = styled.a`
+  border: 1px solid white ; 
+  padding: 0.6rem  1rem;
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left:1rem;
+  z-index: 2;
 &:hover{
-    background-color: ${(props:Buttontype) => props.variant !=='outline' ? 'transparent':  "#1c1c1e"};
-    box-shadow: 5px 5px 5px black;
-    color:${(props:Buttontype) => props.variant !=='outline' ? 'white': 'white'};
+  color: green;
+}
+&::before{
+  content: "";
+   position:absolute;
+   background: white;
+   color:#111a21;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+  z-index: -5;
+   transition:  transform 0.8s;
+    transform-origin: 0 0;
+   transition-timing-function:cubic-bezier(0.5,1.6,0.4,0.7); 
+   transform: scaleX(0);
+   color:#111a21;
+}
+&:hover::before{
+  transform: scaleX(1)
 
 }
 @media (max-width:600px) {
+  padding: 0.3rem  1rem;
   margin-left:${(props:Buttontype) => props.variant ==='outline' ? '': '0.5rem'}
 }
 `
